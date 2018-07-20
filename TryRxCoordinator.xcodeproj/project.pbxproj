@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BAD288E537C2A38BDF991A1 /* Pods_TryRxCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA439A6D438FCA62268F261 /* Pods_TryRxCoordinator.framework */; };
+		630FB7CE2101EA7000B2E317 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB7CD2101EA7000B2E317 /* DeepLinkOption.swift */; };
 		6337AE0D2100AD7B00A7C48F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337AE0C2100AD7B00A7C48F /* AppDelegate.swift */; };
 		6337AE0F2100AD7B00A7C48F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337AE0E2100AD7B00A7C48F /* ViewController.swift */; };
 		6337AE122100AD7B00A7C48F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6337AE102100AD7B00A7C48F /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1A68F9653546E99EBFB2334F /* Pods_TryRxCoordinatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryRxCoordinatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		630FB7CD2101EA7000B2E317 /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		6337AE092100AD7B00A7C48F /* TryRxCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryRxCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6337AE0C2100AD7B00A7C48F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6337AE0E2100AD7B00A7C48F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				6337AE2D2100AE3600A7C48F /* BaseCoordinator.swift */,
+				630FB7CD2101EA7000B2E317 /* DeepLinkOption.swift */,
 				6337AE2F2100B3FC00A7C48F /* AppCoordinator.swift */,
 			);
 			path = Coordonator;
@@ -308,6 +311,7 @@
 				6337AE302100B3FC00A7C48F /* AppCoordinator.swift in Sources */,
 				6337AE0F2100AD7B00A7C48F /* ViewController.swift in Sources */,
 				6337AE2E2100AE3600A7C48F /* BaseCoordinator.swift in Sources */,
+				630FB7CE2101EA7000B2E317 /* DeepLinkOption.swift in Sources */,
 				6337AE0D2100AD7B00A7C48F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
