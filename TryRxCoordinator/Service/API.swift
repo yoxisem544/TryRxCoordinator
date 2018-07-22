@@ -30,7 +30,7 @@ class API {
 
   private init() {}
 
-  private let provider = MoyaProvider<MultiTarget>(plugins: [])
+  private let provider = MoyaProvider<MultiTarget>(plugins: [NetworkLoggerPlugin()])
 
   // 每當我傳入一個 request 時，我都會檢查他的 response 可不可以被 decode，
   // conform DecodableResponseTargetType 的意義在此，

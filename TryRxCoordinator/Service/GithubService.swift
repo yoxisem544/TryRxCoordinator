@@ -49,9 +49,9 @@ enum GitHub {
     }
 
     /// - Returns: a list of languages from GitHub.
-    static func getLanguageList() -> Observable<[String]> {
+    static func getLanguageList() -> [String] {
       // For simplicity we will use a stubbed list of languages.
-      return Observable.just([
+      return [
         "Swift",
         "Objective-C",
         "Java",
@@ -59,7 +59,13 @@ enum GitHub {
         "C++",
         "Python",
         "C#"
-        ])
+      ]
+
+    }
+
+    static func getRandomLanguage() -> String {
+      let count = getLanguageList().count
+      return getLanguageList()[Int(arc4random_uniform(UInt32(count)))]
     }
   }
 }
