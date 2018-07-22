@@ -18,7 +18,7 @@ class AppCoordinator: BaseCoordinator<Void> {
   }
 
   override func start() -> Observable<Void> {
-    let module = ViewController()
+    let module = MainViewController()
     window.rootViewController = module
     window.makeKeyAndVisible()
     return Observable.never() // never terminates app coordinator
