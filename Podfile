@@ -8,6 +8,7 @@ target 'TryRxCoordinator' do
   # Pods for TryRxCoordinator
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Moya/RxSwift'
 
   target 'TryRxCoordinatorTests' do
     inherit! :search_paths

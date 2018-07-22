@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Moya
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     appCoordinator.start()
       .subscribe()
       .disposed(by: disposeBag)
+
+    API.shared.request(GitHub.FetchRepo(language: "Swift"))
+      .subscribe(
+        onSuccess: { rs in
+          print(rs)
+        },
+        onError: { e in
+          if let e = e as? MoyaError, let errorMessage = try? e.response?.mapJSON() {
+//            print(errorMessage)
+            print(e)
+          }
+        })
+    .disposed(by: disposeBag)
 
     return true
   }

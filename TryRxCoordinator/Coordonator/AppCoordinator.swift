@@ -9,6 +9,10 @@
 import UIKit
 import RxSwift
 
+enum LaunchInstruction {
+
+}
+
 class AppCoordinator: BaseCoordinator<Void> {
 
   private let window: UIWindow
@@ -19,7 +23,8 @@ class AppCoordinator: BaseCoordinator<Void> {
 
   override func start() -> Observable<Void> {
     let module = MainViewController()
-    window.rootViewController = module
+    let navigatoin = UINavigationController(rootViewController: module)
+    window.rootViewController = navigatoin
     window.makeKeyAndVisible()
     return Observable.never() // never terminates app coordinator
   }
